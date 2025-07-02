@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Outfit;
+  padding: 40px;
+  &__container {
+    overflow: hidden; /* Обрезаем лишнее */
+    position: relative;
+    max-width: 962px;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center; /* Фиксируем точку увеличения */
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__date {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

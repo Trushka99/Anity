@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "first first verticals"
+    "second second verticals";
+  grid-template-rows: repeat(2, 540px);
+  grid-template-columns: 529px 529px 532px;
+  width: 85%;
+  margin: 0 auto;
+  border: 1px grey solid;
+  border-top: none;
+  margin-bottom: 150px;
+}
+.horizontal {
+  grid-area: first;
+}
+.horizontal2 {
+  grid-area: second;
+  border-top: 1px grey solid;
+}
+.vertical {
+  grid-area: verticals;
+  border-left: 1px grey solid;
+}
+.horizontalImage {
+  max-height: 320px;
+  max-width: 962px;
+}
+.verticalImage {
+  max-height: 780px;
+  max-width: 440px;
+}

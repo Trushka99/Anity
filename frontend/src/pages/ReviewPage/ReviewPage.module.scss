@@ -1,0 +1,30 @@
+.reviewPage {
+  width: 100%;
+  &__cont {
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+  }
+  &__img {
+    width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+    object-position: 45%;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-family: Manrope;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+  &__desc {
+    font-family: Outfit;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__fullDesc {
+    font-family: Outfit;
+    font-size: 18px;
+  }
+}

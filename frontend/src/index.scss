@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background-color: #90ee90; /* Зеленый цвет фона для выделенного текста */
+  color: #000000; /* Цвет текста */
+  outline: 2px solid #008000; /* Зеленая обводка */
+}
+@font-face {
+  font-family: "Westmount";
+  font-style: regular;
+  font-weight: 500;
+  src: local("Westmount"), local("Westmount"),
+    url("./font/Westmount-Outline.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: regular;
+  font-weight: 400;
+  src: local("Outfit-Regular"), local("Outfit-Regular"),
+    url("./font/Outfit-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: regular;
+  font-weight: 700;
+  src: local("Outfit-Bold"), local("Outfit-Bold"),
+    url("./font/Outfit-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Outfit-Medium"), local("Outfit-Medium"),
+    url("./font/Outfit-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Manrope-Bold"), local("Manrope-Bold"),
+    url("./font/Manrope-Bold.ttf") format("truetype");
+}

@@ -1,0 +1,88 @@
+.footer {
+  background-color: #151515;
+  color: white;
+  padding: 96px 0 96px 0;
+  &__flex {
+    display: flex;
+  }
+  &__cont {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__listcont {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  &__arrow {
+    width: 55px;
+    height: 52px;
+    position: relative;
+    border: 1px solid white;
+    cursor: pointer;
+
+    background-color: transparent;
+    transition: background-color 1s ease-in-out;
+    &:hover {
+      background-color: white;
+      &::before {
+        transition: background-color 0.5s ease-in-out;
+        background-color: black;
+      }
+      &::after {
+        transition: all 0.5s ease-in-out;
+        border-top-color: black;
+        border-right-color: black;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px; /* Длина линии */
+      height: 2px; /* Толщина */
+      background-color: white;
+      transform: rotate(326deg);
+      top: 46%;
+      box-sizing: border-box;
+      left: 28%;
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 30%;
+      right: 30%;
+      width: 10px;
+      height: 10px;
+      box-sizing: border-box;
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      transform: rotate(15deg);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    & li {
+      font-family: Outfit;
+      font-weight: 500;
+    }
+    & li:hover {
+      color: #90ee90;
+      cursor: pointer;
+    }
+  }
+  &__input {
+    height: 50px;
+    width: 303px;
+    border: 1px solid white;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,96 @@
+.games {
+  width: 100%;
+  &__img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: 20% 20%;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__link {
+    color: black;
+    text-decoration: none;
+    width: max-content;
+  }
+  &__text {
+    width: 57%;
+    margin: 0 auto;
+  }
+  &__breadcrumbs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 100px;
+  }
+  &__title {
+    font-size: 50px;
+    font-family: Manrope;
+    font-weight: 700;
+  }
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__review {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &_img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &_title {
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    margin-top: 20px;
+    width: 130px;
+    height: 57px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+
+      background-color: black;
+    }
+  }
+  &__modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  &__inputCont {
+    width: 60%;
+    margin: 0 auto;
+  }
+  &__input {
+    width: 100%;
+    height: 60px;
+  }
+}

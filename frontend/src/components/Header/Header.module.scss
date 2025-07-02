@@ -1,0 +1,38 @@
+.header {
+  height: 150px;
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  &__title {
+    margin-right: 10%;
+    font-family: Westmount;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 22px;
+  }
+  &_coloryellow {
+    background-color: yellow; /* Жёлтый фон только для "A" */
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__li {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+      color: rgb(202, 202, 16);
+    }
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
